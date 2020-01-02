@@ -1,0 +1,15 @@
+﻿@page
+@model FirstCoreApp.Pages.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div> Name: <input asp-for="Employee.name" /></div>
+    <div> Email: <input asp-for="Employee.email" /></div>
+    <input type="submit" />
+
+</form>
